@@ -1,0 +1,9 @@
+let a = 15;
+let b = 40;
+console.log(`before swap a= ${a}`);
+console.log(`before swap a= ${b}`);
+a = a + b;
+b = a - b;
+a = a - b;
+console.log(`after swap a= ${a}`);
+console.log(`after swap a= ${b}`);
