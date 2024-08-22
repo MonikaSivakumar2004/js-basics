@@ -1,0 +1,18 @@
+function countSquares(arr, N)
+{
+    var count = 0;
+    for (var i = 0; i < N; i++) {
+        var square = arr[i] * arr[i];
+        for (var j = 0; j < N; j++) {
+            if (arr[j] == square) {
+                count = count + 1;
+            }
+        }
+    }
+    document.write( count);
+}
+
+var arr = [2, 4, 5, 20, 16];
+var N = arr.length;
+countSquares(arr, N);
+ 
